@@ -1,0 +1,14 @@
+# .dockerignore
+node_modules
+.git
+.github
+.next
+.turbo
+dist
+build
+coverage
+.env*
+*.log
+.DS_Store
+.idea
+.vscode

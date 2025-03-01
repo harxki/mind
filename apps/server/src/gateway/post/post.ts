@@ -1,9 +1,7 @@
 import { Hono } from "hono";
 import { prisma } from "../../lib/database/database";
 
-const app = new Hono();
-
-app
+const app = new Hono()
   .get("/", async (c) => {
     const posts = await prisma.post.findMany();
 
