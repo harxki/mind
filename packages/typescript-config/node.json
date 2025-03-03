@@ -1,19 +1,21 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Node 22",
-    "_version": "22.0.0",
-  
-    "compilerOptions": {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 22",
+  "_version": "22.0.0",
+
+  "compilerOptions": {
     "target": "ESNext",
-    "module": "Preserve",
+    "module": "ESNext",
     "strict": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   }
 }
